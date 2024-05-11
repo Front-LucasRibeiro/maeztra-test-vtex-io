@@ -1,7 +1,8 @@
 {
     "product-comparison-drawer": {
-      "title": "ComparaÃ§Ã£o de Produtos",
-      "blocks": ["list-context.comparison-product-summary-slider#drawer"]
+      "title": "Comparação de Produtos",
+      "blocks": ["list-context.comparison-product-summary-slider#drawer"],
+      "allowed": ["slider-layout#comparison-drawer"]
     },
     "list-context.comparison-product-summary-slider#drawer": {
       "blocks": ["slider-layout#comparison-drawer"],
