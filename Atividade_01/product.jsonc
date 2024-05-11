@@ -48,7 +48,7 @@
     },
     "children": [
       "flex-layout.col#stack",
-      "condition-layout.product#unavailable-product" // renderiza o condicional layout na coluna da direita
+      "condition-layout.product#unavailable-product"
     ]
   },
   "stack-layout": {
@@ -139,7 +139,6 @@
       "add-to-cart-button"
     ]
   },
-  //--> novos componentes aqui
   "condition-layout.product#unavailable-product": {
     "props": {
       "conditions": [
@@ -160,8 +159,8 @@
       "product-selling-price",
       "product-installments-list",
       "sku-selector",
-      "product-availability", // texto de avise-me 
-      "availability-subscriber"  // "availability-notify"  // input e button
+      "product-availability", 
+      "availability-subscriber" 
       
     ]
   },
@@ -173,23 +172,4 @@
     }
   }
 }
-
-// schema = {
-//   title: 'editor.countdown.title',
-//   description: 'editor.countdown.description',
-//   type: 'object',
-//   properties: {
-//     title: {
-//       title: 'Sou um título',
-//       type: 'string',
-//       default: null,
-//     },
-//     targetDate: {
-//       title: 'Data final',
-//       description: 'Data final utilizada no contador',
-//       type: 'string',
-//       default: null,
-//     },
-//   },
-// }
 
