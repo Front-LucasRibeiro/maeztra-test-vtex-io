@@ -1,41 +1,67 @@
 {
-    "flex-layout.row#home-info-slider": {
-        "title": "MZ | Info Slider",
-        "props": {
-          "fullWidth": false,
-          "paddingTop": {
-            "desktop": 5,
-            "tablet": 5,
-            "phone": 0
-          },
-          "paddingBottom": {
-            "desktop": 6,
-            "tablet": 6,
-            "phone": 0
-          },
-          "marginTop": {
-            "desktop": 0,
-            "tablet": 0,
-            "phone": 0
-          },
-          "marginBottom": {
-            "desktop": 0,
-            "tablet": 0,
-            "phone": 0
-          },
-          "colGap": {
-            "desktop": 0,
-            "tablet": 0,
-            "phone": 0
-          },
-          "borderWidth": 0,
-          "colSizing": "auto",
-          "preventHorizontalStretch": false,
-          "horizontalAlign": "left",
-          "preserveLayoutOnMobile": false
-        },
-        "children": ["seu componente aqui"]
-      }
-
-      //componentes novos
+  "flex-layout.row#home-info-slider": {
+    "title": "MZ | Info Slider",
+    "props": {
+      "fullWidth": false,
+      "paddingTop": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 0
+      },
+      "paddingBottom": {
+        "desktop": 6,
+        "tablet": 6,
+        "phone": 0
+      },
+      "marginTop": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "marginBottom": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "colGap": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "borderWidth": 0,
+      "colSizing": "auto",
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false
+    },
+    "children": [
+      "list-context#home-info-cards"
+    ]
+  },
+  "list-context#home-info-cards": {
+    "blocks": [
+      "slider-layout#info-cards-slider"
+    ]
+  },
+  "slider-layout#info-cards-slider": {
+    "props": {
+      "id": "info-cards-slider",
+      "arrows": true,
+      "dots": true
+    },
+    "blocks": [
+      "info-card"
+    ]
+  },
+  "info-card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "callToActionText": "DISCOVER",
+      "textAlignment": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Info Card Title"
+    }
+  }
 }
